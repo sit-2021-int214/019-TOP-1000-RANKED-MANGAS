@@ -1,6 +1,6 @@
 # 019-TOP-1000-RANKED-MANGAS
 
-Datasets from: [Finance & Accounting Courses - Udemy (13K+ course)](https://www.kaggle.com/jilkothari/finance-accounting-courses-udemy-13k-course)
+Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/astronautelvis/top-1000-ranked-mangas-by-myanimelist)
 
 ## Objective
 
