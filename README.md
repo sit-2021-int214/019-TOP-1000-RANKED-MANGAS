@@ -14,11 +14,11 @@ Datasets from: [Finance & Accounting Courses - Udemy (13K+ course)](https://www.
 
 ### Team: nameXXXXXX
 
-1. ชื่อ นามสกุล StudentID: 63130500108
-2. ชื่อ นามสกุล StudentID: 63130500115
-3. ชื่อ นามสกุล StudentID: 63130500118
-4. ชื่อ นามสกุล StudentID: 63130500124
-5. ชื่อ นามสกุล StudentID: 63130500161
+1. นางสาวศศิภา มณีอินทร์ StudentID: 63130500108
+2. นายสาริน วีรกุล StudentID: 63130500115
+3. นายสิรภพ ไพเราะ StudentID: 63130500118
+4. นางสาวสุพิชา พิริยะศิริพันธ์ StudentID: 63130500124
+5. นายอุดมชัย นิราศรพ StudentID: 63130500161
 
 ### Instructor
 
