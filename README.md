@@ -2,7 +2,9 @@
 
 Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/astronautelvis/top-1000-ranked-mangas-by-myanimelist)
 
-## Objective
+## Overview
+
+# Tools
 
 ## Process
 
