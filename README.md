@@ -9,6 +9,7 @@ Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/as
   <li> R Languange </li>
   <li> RStudio </li>
 </ul>
+
 ## Process
 
 ## Result
