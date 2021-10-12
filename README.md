@@ -9,10 +9,9 @@ Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/as
 <p>กลุ่มของเราได้เลือกชุดข้อมูล Top 1000 Ranked Mangas เพื่อต้องการศึกษาความนิยม ความชื่นชอบ ประเภท รวมไปถึงว่าผู้คนส่วนใหญ่ที่ชื่นชอบ Manga ให้ความสนใจกับเรื่องอะไร มากน้อยแค่ไหน</p>
   
 ### Tools
-<ul>
-  <li> R Languange </li>
-  <li> RStudio </li>
-</ul>
+- R Languange
+- RStudio
+
 
 ## Process
 
