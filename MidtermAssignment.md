@@ -96,9 +96,17 @@ rownames(Mangas)
 -	ประเภทของมังงะเรื่องนั้น ๆ ยกตัวอย่างเช่น มังงะ Attack On Titan มีประเภทดังนี้ 'Action', 'Mystery', 'Drama', 'Fantasy', 'Shounen', 'Super Power', 'Military'
 -	ข้อมูลจะเก็บในรูปแบบของ Genre = col_character()
 
-## Result
+## Data Cleaning and Data Transformation
+```
+โค้ดจงมาอยู่นี่
+```
 
-## Resources
+## Data Analysis with Descriptive Statistics
+
+### Question 1: 
+```
+โค้ดจงมาอยู่นี่
+```
 
 ## About Us
 
