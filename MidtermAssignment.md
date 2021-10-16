@@ -29,7 +29,7 @@ rownames(Mangas)
 -	ลำดับของมังงะ
 -	เก็บข้อมูลในรูปแบบ ...1 = col_double()
 
-### 2.	(Title)Title of the Manga.
+### 2.	(Title) Title of the Manga.
 -	ชื่อเรื่องของมังงะ
 -	เก็บข้อมูลในรูปแบบ Title = col_character()
 
