@@ -34,22 +34,22 @@ rownames(Mangas)
 ### 1.	Index of Manga
 -	ลำดับของมังงะ
 -	เก็บข้อมูลในรูปแบบ ...1 = col_double()
-ตัวอย่างข้อมูล : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,…
+-	ตัวอย่างข้อมูล : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,…
 
 ### 2.	(Title) Title of the Manga.
 -	ชื่อเรื่องของมังงะ
 -	เก็บข้อมูลในรูปแบบ Title = col_character()
-ตัวอย่างข้อมูล : "Berserk", "JoJo no Kimyou na Bouken Part 7: Steel Ball Run", "One Piece", "Vagabond", "M…
+-	ตัวอย่างข้อมูล : "Berserk", "JoJo no Kimyou na Bouken Part 7: Steel Ball Run", "One Piece", "Vagabond", "M…
 
 ### 3.	(Title_Synonym) Synonym of Title of Manga.
 -	ชื่อเรียกแฝงของมังงะ
 -	ข้อมูลเก็บในรูปแบบ Title_Synonym = col_character()
-ตัวอย่างข้อมูล : Doukyuusei ก็จะมีอีกชื่อเรียกว่า Classmates หรือ Tensei shitara Slime Datta Ken ก็จะมีอีกชื่อเรียกว่า That Time I Got Reincarnated as a Slim
+-	ตัวอย่างข้อมูล : Doukyuusei ก็จะมีอีกชื่อเรียกว่า Classmates หรือ Tensei shitara Slime Datta Ken ก็จะมีอีกชื่อเรียกว่า That Time I Got Reincarnated as a Slim
 
 ### 4.	(Title_Japanese) Title of Manga in Japanese.
 -	ชื่อเรื่องของมังงะแบบภาษาญี่ปุ่น
 -	เก็บข้อมูลในรูปแบบ Title_Japanese = col_character()
-ตัวอย่างข้อมูล : "ベルセルク", "ジョジョの奇妙な冒険 Part7 STEEL BALL RUN", "ONE PIECE", "バガボンド", "MO…
+-	ตัวอย่างข้อมูล : "ベルセルク", "ジョジョの奇妙な冒険 Part7 STEEL BALL RUN", "ONE PIECE", "バガボンド", "MO…
 
 ### 5.	(Status) Description whether the manga is currently publishing or has completed publication
 -	มังงะเรื่องนี้มีสถานะเป็นอย่างไร
@@ -57,67 +57,67 @@ rownames(Mangas)
   1. สถานะ Finished จบแล้ว
   2. สถานะ Publishing อยู่ในระหว่างการตีพิมพ์
   3. สถานะ On Hiatus หยุดตีพิมพ์ชั่วคราว
-ตัวอย่างข้อมูล : "Publishing", "Finished", "Publishing", "On Hiatus", "Finished", "Finished", "Finished", …
+- ตัวอย่างข้อมูล : "Publishing", "Finished", "Publishing", "On Hiatus", "Finished", "Finished", "Finished", …
 
 ### 6.	(Volumns) Number of Volumes of Manga.
 -	จำนวนเล่มที่ตีพิมพ์จนจบ
 -	ข้อมูลจะเก็บในรูปแบบ Volumns = col_character() หากถ้าเกิดเรื่องไหนยังไม่จบ ช่องนี้จะมีค่าเป็น unknown
-ตัวอย่างข้อมูล : "unkown", "24.0", "unkown", "37.0", "18.0", "27.0", "13.0", "unkown", "31.0", "unkown", "…
+-	ตัวอย่างข้อมูล : "unkown", "24.0", "unkown", "37.0", "18.0", "27.0", "13.0", "unkown", "31.0", "unkown", "…
 
 ### 7.	(Chapters) Number of Chapters of Manga.
 -	จำนวนตอนของมังงะเรื่องนั้น ๆ จนจบ
 -	ข้อมูลจะเก็บในรูปแบบ Chapters = col_character() หากถ้าเกิดเรื่องไหนยังไม่จบ ช่องนี้จะมีค่าเป็น unknown
-ตัวอย่างข้อมูล : "unkown", "96.0", "unkown", "327.0", "162.0", "116.0", "147.0", "unkown", "276.0", "unkow…
+-	ตัวอย่างข้อมูล : "unkown", "96.0", "unkown", "327.0", "162.0", "116.0", "147.0", "unkown", "276.0", "unkow…
 
 ### 8.	(Publishing) Publishing Status
 -	มังงะเรื่องนั้นยังมีสถานะการออกอากาศอยู่ในปัจจุบันหรือไม่
 -	ข้อมูลจะเก็บในรูปแบบของ Publishing = col_logical() เป็น Boolean (True ยังออกอากาศอยู่ / False มังงะเรื่องนั้นจบแล้วเลยไม่ออกอากาศแล้ว) 
-ตัวอย่างข้อมูล : TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRU…
+-	ตัวอย่างข้อมูล : TRUE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, TRUE, FALSE, TRU…
 
 ### 9.	(Rank) Ranking of Manga at MAL.
 -	อันดับของมังงะ โดยอิงจาก MAL(https://myanimelist.net)
 -	ข้อมูลจะเก็บในรูปแบบของ Rank = col_double()
-ตัวอย่างข้อมูล : 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25…
+-	ตัวอย่างข้อมูล : 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25…
 
 ### 10.	(Score) Score of Manga at MAL
 -	คะแนนของมังงะเรื่องนั้น ๆ โดย MAL(https://myanimelist.net)
 -	ข้อมูลจะเก็บในรูปแบบของ Score = col_double()
-ตัวอย่างข้อมูล : 9.39, 9.23, 9.15, 9.13, 9.10, 9.08, 9.05, 9.04, 9.02, 8.98, 8.96, 8.95, 8.94, 8.94, 8.92,…
+-	ตัวอย่างข้อมูล : 9.39, 9.23, 9.15, 9.13, 9.10, 9.08, 9.05, 9.04, 9.02, 8.98, 8.96, 8.95, 8.94, 8.94, 8.92,…
 
 ### 11.	(Scored_by) Number of people who scored the Manga.
 -	จำนวนคนที่โหวตให้กับมังงะเรื่องนั้น ๆ 
 -	ข้อมูลจะเก็บในรูปแบบของ Scored_by = col_double()
-ตัวอย่างข้อมูล : 201756, 94427, 249936, 72613, 57801, 130375, 107866, 43573, 47977, 40183, 11864, 72566, 5…
+-	ตัวอย่างข้อมูล : 201756, 94427, 249936, 72613, 57801, 130375, 107866, 43573, 47977, 40183, 11864, 72566, 5…
 
 ### 12.	(Popularity) Popularity Ranking of Manga.
 -	อันดับความนิยมของผู้อ่าน
 -	ข้อมูลจะเก็บในรูปแบบของ Popularity = col_double()
-ตัวอย่างข้อมูล : 2, 29, 3, 19, 33, 16, 10, 61, 73, 67, 240, 23, 37, 24, 369, 743, 32, 60, 231, 149, 63, 19…
+-	ตัวอย่างข้อมูล : 2, 29, 3, 19, 33, 16, 10, 61, 73, 67, 240, 23, 37, 24, 369, 743, 32, 60, 231, 149, 63, 19…
 
 ### 13.	(Memebers) Number of members/users of MAL who have added the manga to their reading list.
 -	จำนวนผู้ใช้งานในเว็บไซต์ MAL(https://myanimelist.net) ที่เพิ่มมังงะเรื่องนั้นเข้าลิสต์มังงะที่อยากอ่าน (reading list) ของตนเอง
 -	ข้อมูลจะเก็บในรูปแบบของ Memebers = col_double()
-ตัวอย่างข้อมูล : 427894, 160782, 410522, 211345, 148764, 236950, 276311, 118761, 103814, 107482, 45128, 18…
+-	ตัวอย่างข้อมูล : 427894, 160782, 410522, 211345, 148764, 236950, 276311, 118761, 103814, 107482, 45128, 18…
 
 ### 14.	(Favorites) Number of members/users of MAL who have added the manga to their favorite list.
 -	จำนวนผู้ใช้งานในเว็บไซต์ MAL(https://myanimelist.net) ที่เพิ่มมังงะเรื่องนั้นเข้าลิสต์มังงะที่ชื่นชอบ (favorite list) ของตนเอง
 -	ข้อมูลจะเก็บในรูปแบบของ Favorites = col_double()
-ตัวอย่างข้อมูล : 80308, 27459, 82310, 21596, 13049, 26753, 34636, 11740, 10289, 9881, 2422, 18926, 12693, …
+-	ตัวอย่างข้อมูล : 80308, 27459, 82310, 21596, 13049, 26753, 34636, 11740, 10289, 9881, 2422, 18926, 12693, …
 
 ### 15.	(Synopsis) Short Summary of Manga.
 -	เรื่องย่อของมังงะ
 -	ข้อมูลจะเก็บในรูปแบบของ Synopsis = col_character()
-ตัวอย่างข้อมูล : "Guts, a former mercenary now known as the \"Black Swordsman,\" is out for revenge. After…
+-	ตัวอย่างข้อมูล : "Guts, a former mercenary now known as the \"Black Swordsman,\" is out for revenge. After…
 
 ### 16.	(Publish_period) Publishing Period of Manga.
 -	ช่วงเวลาที่ตีพิมพ์ ตั้งแต่เริ่มต้นถึงสิ้นสุด หากเรื่องไหนยังไม่จบจะเขียนตอนท้ายว่า to present
 -	ข้อมูลจะเก็บในรูปแบบของ Publish_period = col_character()
-ตัวอย่างข้อมูล : "Aug  25, 1989 to present", "Jan  19, 2004 to Apr  19, 2011", "Jul  22, 1997 to present",…
+-	ตัวอย่างข้อมูล : "Aug  25, 1989 to present", "Jan  19, 2004 to Apr  19, 2011", "Jul  22, 1997 to present",…
 
 ### 17.	(Genre) Genre in which Manga belongs.
 -	ประเภทของมังงะเรื่องนั้น ๆ
 -	ข้อมูลจะเก็บในรูปแบบของ Genre = col_character()
-ตัวอย่างข้อมูล : Attack On Titan มีประเภทดังนี้ 'Action', 'Mystery', 'Drama', 'Fantasy', 'Shounen', 'Super Power', 'Military'
+-	ตัวอย่างข้อมูล : Attack On Titan มีประเภทดังนี้ 'Action', 'Mystery', 'Drama', 'Fantasy', 'Shounen', 'Super Power', 'Military'
 
 ## Data Cleaning and Data Transformation
 ```
