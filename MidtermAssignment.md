@@ -16,7 +16,7 @@ Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/as
 1. Download dataset Top 1000 Mangas and save into folder R-214 on the Desktop
 2. Explore the dataset from the original dataset
 3. Exploratory Data Analysis
-4. Download Library dplyr, stringr, readr
+4. Download Library dplyr, stringr, readr, data.table
 5. Cleaning dataset
 6. Define questions
 
