@@ -58,9 +58,13 @@ glimpse(Mangas)
 โค้ดจงมาอยู่นี่
 ```
 
+## Defind Question
+1. TOP 5 มังงะที่ได้รับความนิยม(Popularity)และตีพิมพ์จบแล้วมีเรื่องอะไรบ้าง
+2. TOP 5 อันดับ(Rank)มังงะที่ตีพิมพ์จบแล้วและมีจำนวนตอน(Chapters)ไม่เกิน 24 ตอน
+
 ## Data Analysis with Descriptive Statistics
 
-### ❓ Question 1: TOP 5 ความนิยม(Popularity) มังงะที่ตีพิมพ์จบแล้ว
+### ❓ Question 1: TOP 5 มังงะที่ได้รับความนิยม(Popularity)และตีพิมพ์จบแล้วมีเรื่องอะไรบ้าง
 ``` ruby
 Mangas %>% 
   select(Title,Popularity,Publishing) %>% 
@@ -68,8 +72,8 @@ Mangas %>%
   arrange(Popularity) %>% 
   head(n = 5L)
 ```
-Result: สามารถนำข้อมูลไปใช้ดูมังงะที่จบแล้วและมีความยอดนิยม(Popularity) สำหรับกลุ่มลูกค้าที่ต้องการอ่านเรื่องที่นิยมและจบแล้ว
-จะเห็นได้ว่ามังงะที่จบแล้วและได้รับความนิยมเป็น 5 อันดับแรกประกอบด้วย Berserk, One Piece, Boku no Hero Academia, One Punch-Man, Solo Leveling
+Result: สามารถนำข้อมูลไปใช้ดูมังงะที่จบแล้วและมีความยอดนิยม(Popularity) สำหรับกลุ่มลูกค้าที่ต้องการอ่านเรื่องที่นิยมและจบแล้ว <br/>
+มังงะที่จบแล้วและได้รับความนิยมเป็น 5 อันดับแรกประกอบด้วย Berserk, One Piece, Boku no Hero Academia, One Punch-Man, Solo Leveling
 ```
   Title                 Popularity Publishing  
 1 Berserk                        2 TRUE      
@@ -79,15 +83,16 @@ Result: สามารถนำข้อมูลไปใช้ดูมัง
 5 Solo Leveling                 13 TRUE 
 ```
 
-### ❓ Question 2: TOP 5 อันดับ(Rank)มังงะที่ตีพิมพ์จบแล้ว ที่มีจำนวนตอน(Chapters)ไม่เกิน 24 ตอน
-```
+### ❓ Question 2: TOP 5 อันดับ(Rank)มังงะที่ตีพิมพ์จบแล้วและมีจำนวนตอน(Chapters)ไม่เกิน 24 ตอน
+``` ruby
 Mangas %>% 
   select(Title,Chapters,Rank) %>% 
   filter(Mangas$Chapters <= 24) %>% 
   arrange(Rank) %>% 
   head(n = 5L)
 ```
-Result สามารถนำข้อมูลไปใช้ดูมังงะที่ตีพิมพ์จบแล้ว แต่ไม่จำนวนตอนไม่เยอะมากจนเกินไป สำหรับกลุ่มลูกค้าที่ต้องการหาเวลาว่างมานั่งอ่านมังงะสั้น ๆ สักเรื่อง
+Result: สามารถนำข้อมูลไปใช้ดูมังงะที่ตีพิมพ์จบแล้ว แต่ไม่จำนวนตอนไม่เยอะมากจนเกินไป สำหรับกลุ่มลูกค้าที่ต้องการหาเวลาว่างมานั่งอ่านมังงะสั้น ๆ สักเรื่อง <br/>
+มังงะที่จบแล้วและจำนวนตอนไม่เกิน 24 ตอนเป็น 5 อันดับแรกประกอบด้วย Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de., The Horizon, Violet Evergarden, Watashitachi no Shiawase na Jikan, Fate/Zero
 ```
   Title                                                       Chapters  Rank
 1 Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de.       18    34
