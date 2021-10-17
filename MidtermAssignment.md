@@ -55,14 +55,18 @@ glimpse(Mangas)
 
 ## Data Cleaning and Data Transformation
 ```
+# เปลี่ยนค่าในคอลัมน์ Volumns จาก unkown ให้กลายเป็น 0
+Mangas$Volumns <- str_replace(Mangas$Volumns,"unkown","0")
+
+# เปลี่ยนชนิดข้อมูลในคอลัมน์ Volumns และ Chapters จาก String เป็น Numeric
+Mangas$Volumns <- as.numeric(Mangas$Volumns)
+Mangas$Chapters <- as.numeric(Mangas$Chapters)
+
+# เปลี่ยนคอลัมน์ Publish_period จากที่จะแสดงวันตั้งแต่เริ่มขายจนถึงสิ้นสุด เปลี่ยนเป็นแค่วันเริ่มแรกที่ขายแทนและใช้ชื่อคอลัมน์เป็นPublish_dateแทน
 Mangas <- Mangas %>% filter(Publish_period %like% "to")
 Mangas$Publish_period <- substr(Mangas$Publish_period, 1, regexpr("to", Mangas$Publish_period)-2)
 View(Mangas)
-
-# Save into new variable
 Date <- Mangas
-
-# Rename Column named Memebers to Members
 Date <- Mangas %>% rename(Publish_date=Publish_period)
 glimpse(Date)
 ```
@@ -230,7 +234,7 @@ Finished <- Mangas %>%
 PercentPublishing <- (count(Publishing)/1000)*100
 PercentFinished <- (count(Finished)/1000)*100
 ```
-Result สามารถนำข้อมูลมาค่าสัดส่วนมังงะเรื่องอาจจบไปแล้วแต่ก็ยังสามารถได้รับความนิยมอยู่จนถึงทุกวันนี้ โดยจากที่เห็น 72% นั่นเป็นมังงะที่จบแล้วเป็นส่วนใหญ่ แสดงให้เห็นถึงความนิยมของมังงะในอดีตยังคงส่งผลมาถึงปัจจุบัน
+Result: สามารถนำข้อมูลมาค่าสัดส่วนมังงะเรื่องอาจจบไปแล้วแต่ก็ยังสามารถได้รับความนิยมอยู่จนถึงทุกวันนี้ โดยจากที่เห็น 72% นั่นเป็นมังงะที่จบแล้วเป็นส่วนใหญ่ แสดงให้เห็นถึงความนิยมของมังงะในอดีตยังคงส่งผลมาถึงปัจจุบัน
 ```
 PercentPublishing = 27.1%
 PercentFinished = 72%
