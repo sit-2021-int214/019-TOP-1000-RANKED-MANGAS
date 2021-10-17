@@ -35,12 +35,10 @@ rownames(Mangas)
 | :--: | -------------------- | -----------     |  --------------------   | -------------------------------- |
 | 1    | Index of Manga       | ลำดับของมังงะ     | ...1 = col_double()     | 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,... |
 | 2    | Title                | ชื่อเรื่องของมังงะ   | Title = col_character() | "Berserk", "JoJo no Kimyou na Bouken Part 7: Steel Ball Run",... |
+| 3    | Title_Synonym        | ชื่อเรียกแฝงของมังงะ| Title_Synonym = col_character()     | Doukyuusei ก็จะมีอีกชื่อเรียกว่า Classmates |
+| 4    | Title_Japanese       | ชื่อเรื่องของมังงะแบบภาษาญี่ปุ่น   | Title_Japanese = col_character() | "ベルセルク", "ジョジョの奇妙な冒険 Part7 STEEL BALL RUN",... |
 
 
-### 2.	(Title) Title of the Manga.
--	ชื่อเรื่องของมังงะ
--	เก็บข้อมูลในรูปแบบ Title = col_character()
--	ตัวอย่างข้อมูล : "Berserk", "JoJo no Kimyou na Bouken Part 7: Steel Ball Run", "One Piece", "Vagabond", "M…
 
 ### 3.	(Title_Synonym) Synonym of Title of Manga.
 -	ชื่อเรียกแฝงของมังงะ
