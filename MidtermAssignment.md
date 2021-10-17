@@ -60,12 +60,16 @@ glimpse(Mangas)
 ## Data Analysis with Descriptive Statistics
 
 ### ❓ Question 1: TOP 5 ความนิยม(Popularity) มังงะที่ตีพิมพ์จบแล้ว
-```
-Mangas %>% select(Title,Popularity,Publishing) %>% filter(Publishing == TRUE) %>% arrange(Popularity) %>% head(n = 5L)
+``` ruby
+Mangas %>% 
+  select(Title,Popularity,Publishing) %>% 
+  filter(Publishing == TRUE) %>% 
+  arrange(Popularity) %>% 
+  head(n = 5L)
 ```
 Result สามารถนำข้อมูลไปใช้ดูมังงะที่จบแล้วและมีความยอดนิยม(Popularity) สำหรับกลุ่มลูกค้าที่ต้องการอ่านเรื่องที่นิยมและจบแล้ว
 จะเห็นได้ว่ามังงะที่จบแล้วและได้รับความนิยมเป็น 5 อันดับแรกประกอบด้วย Berserk, One Piece, Boku no Hero Academia, One Punch-Man, Solo Leveling
-```
+``` ruby
   Title                 Popularity Publishing  
 1 Berserk                        2 TRUE      
 2 One Piece                      3 TRUE      
