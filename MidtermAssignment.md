@@ -37,9 +37,7 @@ rownames(Mangas)
 | 2    | Title                | ชื่อเรื่องของมังงะ   | Title = col_character() | "Berserk", "JoJo no Kimyou na Bouken Part 7: Steel Ball Run",... |
 | 3    | Title_Synonym        | ชื่อเรียกแฝงของมังงะ| Title_Synonym = col_character()     | Doukyuusei ก็จะมีอีกชื่อเรียกว่า Classmates |
 | 4    | Title_Japanese       | ชื่อเรื่องของมังงะแบบภาษาญี่ปุ่น   | Title_Japanese = col_character() | "ベルセルク", "ジョジョの奇妙な冒険 Part7 STEEL BALL RUN",... |
-| 5    | Status               | มังงะเรื่องนี้มีสถานะเป็นอย่างไร   1. สถานะ Finished จบแล้ว
-  2. สถานะ Publishing อยู่ในระหว่างการตีพิมพ์
-  3. สถานะ On Hiatus หยุดตีพิมพ์ชั่วคราว    | Status = col_character()     | "Publishing", "Finished", "Publishing", "On Hiatus",… |
+| 5    | Status               | มังงะเรื่องนี้มีสถานะเป็นอย่างไร (Finished=จบแล้ว/Publishing=อยู่ในระหว่างการตีพิมพ์/On Hiatus=หยุดตีพิมพ์ชั่วคราว)    | Status = col_character()     | "Publishing", "Finished", "Publishing", "On Hiatus",… |
 | 6    | Volumns              | จำนวนเล่มที่ตีพิมพ์จนจบ หากถ้าเกิดเรื่องไหนยังไม่จบ ช่องนี้จะมีค่าเป็น unknown   | Volumns = col_character() | "unkown", "24.0", "unkown", "37.0",… |
 | 7    | Chapters        | จำนวนตอนของมังงะเรื่องนั้น ๆ จนจบ หากถ้าเกิดเรื่องไหนยังไม่จบ ช่องนี้จะมีค่าเป็น unknown| Chapters = col_character()     | "unkown", "96.0", "unkown", "327.0", "162.0", "116.0",... |
 | 8    | Publishing       | ชื่อเรื่องของมังงะแบบภาษาญี่ปุ่น   | Publishing = col_logical() | TRUE, FALSE, TRUE, FALSE, FALSE,... |
