@@ -69,7 +69,7 @@ Mangas %>%
 ```
 Result สามารถนำข้อมูลไปใช้ดูมังงะที่จบแล้วและมีความยอดนิยม(Popularity) สำหรับกลุ่มลูกค้าที่ต้องการอ่านเรื่องที่นิยมและจบแล้ว
 จะเห็นได้ว่ามังงะที่จบแล้วและได้รับความนิยมเป็น 5 อันดับแรกประกอบด้วย Berserk, One Piece, Boku no Hero Academia, One Punch-Man, Solo Leveling
-``` ruby
+```
   Title                 Popularity Publishing  
 1 Berserk                        2 TRUE      
 2 One Piece                      3 TRUE      
@@ -88,12 +88,25 @@ Result สามารถนำข้อมูลไปใช้ดูมัง�
 ```
 
 ### ❓ Question 3: TOP 10 มังงะที่ได้รับคะแนนความนิยม(Score) พร้อมกับเรื่องย่อ(Synopsis)
-```
-โค้ดจงมาอยู่นี่
+``` ruby
+Mangas %>% 
+  select(Title,Score,Synopsis) %>% 
+  arrange(desc(Score)) %>% 
+  head(n = 10L)
 ```
 Result สามารถนำข้อมูลความนิยมและเรื่องย่อ ไปใช้ประกอบเว็บไซต์แนะนำมังงะได้
 ```
-โค้ดจงมาอยู่นี่
+Title                                           Score Synopsis                                                                 
+ 1 Berserk                                          9.39 "Guts, a former mercenary now known as th…
+ 2 JoJo no Kimyou na Bouken Part 7: Steel Ball Run  9.23 "In the American Old West, the world's gr…
+ 3 One Piece                                        9.15 "Gol D. Roger, a man referred to as the \…
+ 4 Vagabond                                         9.13 "In 16th century Japan, Shinmen Takezou i…
+ 5 Monster                                          9.1  "Kenzou Tenma, a renowned Japanese neuros…
+ 6 Fullmetal Alchemist                              9.08 "Alchemists are knowledgeable and natural…
+ 7 Oyasumi Punpun                                   9.05 "Punpun Onodera is a normal 11-year-old b…
+ 8 Grand Blue                                       9.04 "Among the seaside town of Izu's ocean wa…
+ 9 Slam Dunk                                        9.02 "Hanamichi Sakuragi, a tall, boisterous t…
+10 Kingdom                                          8.98 "During the Warring States period in Chin…
 ```
 
 ### ❓ Question 4: เปรียบเทียบความนิยมโดยอิงจากค่าเฉลี่ย(AVG)คะแนน(Score)ของมังงะเรื่องนั้น ๆ ตามประเภทว่าระหว่าง 'Action' กับ 'Fantasy' ประเภทไหนได้รับความนิยมมากกว่ากัน
