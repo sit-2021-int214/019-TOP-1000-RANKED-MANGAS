@@ -14,10 +14,11 @@ Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/as
 
 
 ## Process
-
-## Result
+Midterm Assignment(https://github.com/sit-2021-int214/019-TOP-1000-RANKED-MANGAS/blob/main/MidtermAssignment.md)
 
 ## Resources
+- Original dataset()
+- Clean dataset()
 
 ## About Us 📝
 
