@@ -106,19 +106,19 @@ Result: สามารถนำข้อมูลไปใช้ดูมัง
 ### ❓ Question 2: TOP 5 อันดับ(Rank)มังงะที่ตีพิมพ์จบแล้วและมีจำนวนตอน(Chapters)ไม่เกิน 24 ตอน
 ``` ruby
 Mangas %>% 
-  select(Title,Chapters,Rank) %>% 
-  filter(Mangas$Chapters <= 24) %>% 
+  select(Title,Chapters,Rank,Status) %>% 
+  filter(Mangas$Chapters <= 24, Mangas$Status=="Finished") %>% 
   arrange(Rank) %>% 
   head(n = 5L)
 ```
 Result: สามารถนำข้อมูลไปใช้ดูมังงะที่จบแล้วและมีจำนวนตอนไม่เยอะมากจนเกินไปเป็นอันดับท็อป 5 สำหรับกลุ่มลูกค้าที่ต้องการหาเวลาว่างมานั่งอ่านมังงะสั้น ๆ สักเรื่อง โดยมีผลลัพธ์ดังนี้
 ```
-  Title                                                       Chapters  Rank
-1 Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de.       18    34
-2 The Horizon                                                       21    38
-3 Violet Evergarden                                                 13    65
-4 Watashitachi no Shiawase na Jikan                                  8    72
-5 Fate/Zero                                                         18    88
+  Title                                                       Chapters  Rank Status   
+1 Jumyou wo Kaitotte Moratta. Ichinen ni Tsuki, Ichimanen de.       18    34 Finished
+2 The Horizon                                                       21    38 Finished
+3 Violet Evergarden                                                 13    65 Finished
+4 Watashitachi no Shiawase na Jikan                                  8    72 Finished
+5 Fate/Zero                                                         18    88 Finished
 ```
 
 ### ❓ Question 3: TOP 10 มังงะที่ได้รับคะแนนความนิยม(Score) พร้อมกับเรื่องย่อ(Synopsis)
