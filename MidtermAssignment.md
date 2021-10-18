@@ -19,7 +19,7 @@ Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/as
 3. Cleaning dataset
 4. Exploratory Data Analysis
 
-## STEP 0 Download dataset and library 🗑
+## STEP 0 Download dataset and library ⏳
 ``` ruby
 # library
 library(readr)
