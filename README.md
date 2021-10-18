@@ -17,7 +17,7 @@ Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/as
 [Midterm Assignment](https://github.com/sit-2021-int214/019-TOP-1000-RANKED-MANGAS/blob/main/MidtermAssignment.md)
 
 ## Resources
-- Original dataset()
+- [Original dataset](https://github.com/sit-2021-int214/019-TOP-1000-RANKED-MANGAS/blob/main/top_1000.csv)
 - Clean dataset()
 
 ## About Us 📝
