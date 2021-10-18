@@ -1,4 +1,4 @@
-# 019-TOP-1000-RANKED-MANGAS📚
+# 019-TOP-1000-RANKED-MANGAS 📚
 
 Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/astronautelvis/top-1000-ranked-mangas-by-myanimelist)
 
@@ -8,15 +8,14 @@ Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/as
 ## Overview 💭
 <p>กลุ่มของเราได้เลือกชุดข้อมูล Top 1000 Ranked Mangas เพื่อต้องการศึกษาความนิยม ความชื่นชอบ ประเภท รวมไปถึงว่าผู้คนส่วนใหญ่ที่ชื่นชอบ Manga ให้ความสนใจกับเรื่องอะไร มากน้อยแค่ไหน</p>
   
-### Tools🛠
+### Tools 🛠
 - R Languange
 - RStudio
 
-
-## Process
+## Process 💼
 [Midterm Assignment](https://github.com/sit-2021-int214/019-TOP-1000-RANKED-MANGAS/blob/main/MidtermAssignment.md)
 
-## Resources
+## Resources 📦
 - [Original dataset](https://github.com/sit-2021-int214/019-TOP-1000-RANKED-MANGAS/blob/main/top_1000.csv)
 - Clean dataset()
 
@@ -24,7 +23,7 @@ Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/as
 
 งานนี้เป็นส่วนของวิชา INT214 Statistics for Information technology <br/> ภาคเรียนที่ 1 ปีการศึกษา 2564 คณะเทคโนโลยีสารสนเทศ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 
-### Team: เซ็กซี่ยกกำลังห๊า
+### Team: เซ็กซี่ยกกำลังห๊า 🎒
 
 | NO   | NAME                 | STUDENTID   |
 | :--: | -------------------- | ----------- |
@@ -34,7 +33,7 @@ Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/as
 | 4    | นางสาวสุพิชา พิริยะศิริพันธ์ | 63130500124 |
 | 5    | นายอุดมชัย นิราศรพ      | 63130500161 |
 
-### Instructor
+### Instructor 🍀
 
 - ATCHARA TRAN-U-RAIKUL
 - JATAWAT XIE (Git: [safesit23](https://github.com/safesit23))
