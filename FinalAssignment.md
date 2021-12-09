@@ -117,6 +117,29 @@ Result: มังงะในยุคเก่าจะเป็นที่น
  9 2015  21596
 10 2018  16210
 ```
+### ❓ Question 3: สถานะการออกอากาศ(publishing,finished) มีผลต่อจำนวน members หรือไม่
+Hypothesis:สถานะการออกอากาศ(publishing, finished) มีผลต่อจำนวน members เพราะ บางคนก็รอที่จะดูต่อเพราะค้างคา หรือ บางคนก็ชอบที่จะดูเรื่องที่จบไปแล้วจะได้ไม่ต้องรอและไม่ต้องค้างคา
+
+``` ruby
+Mangas2 %>% select(Title_Synonym , Status , Memebers)  %>% 
+  arrange(desc(Memebers))
+```
+Result: พบว่าสถานะมีผลต่อ members อย่าง finished members มีจำนวนโดยรวมมากกว่า publishing 
+
+
+```
+ Title_Synonym    Status     Memebers
+ 1 Attack on Titan  Finished     498886
+ 2 Berserk          Publishing   427894
+ 3 One Piece        Publishing   410522
+ 4 Tokyo Ghoul      Finished     370631
+ 5 Naruto           Finished     350621
+ 6 My Hero Academia Publishing   332665
+ 7 One-Punch Man    Publishing   329615
+ 8 Death Note       Finished     315924
+ 9 Goodnight Punpun Finished     276311
+10 Horimiya         Finished     259987
+```
 
 
 ## STEP 3 Data Visualization 🧐
