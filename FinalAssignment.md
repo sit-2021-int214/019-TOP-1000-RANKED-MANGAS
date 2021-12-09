@@ -169,14 +169,14 @@ Result: แม้อันดับ 1 จะเป็นของมังงะ
 ```
 
 
-### ❓ Question 3: สถานะการออกอากาศ(publishing,finished) มีผลต่อจำนวน members หรือไม่
-Hypothesis:สถานะการออกอากาศ(publishing, finished) มีผลต่อจำนวน members เพราะ บางคนก็รอที่จะดูต่อเพราะค้างคา หรือ บางคนก็ชอบที่จะดูเรื่องที่จบไปแล้วจะได้ไม่ต้องรอและไม่ต้องค้างคา
+### ❓ Question 3: สถานะการออกอากาศ(Publishing, finished) มีผลต่อจำนวน Members หรือไม่
+Hypothesis:สถานะการออกอากาศ(Publishing, Finished) มีผลต่อจำนวน Members เพราะ บางคนก็รอที่จะดูต่อเพราะค้างคา หรือ บางคนก็ชอบที่จะดูเรื่องที่จบไปแล้วจะได้ไม่ต้องรอและไม่ต้องค้างคา
 
 ``` ruby
 Mangas2 %>% select(Title_Synonym , Status , Memebers)  %>% 
   arrange(desc(Memebers))
 ```
-Result: พบว่าสถานะมีผลต่อ members อย่าง finished members มีจำนวนโดยรวมมากกว่า publishing 
+Result: พบว่าสถานะมีผลต่อ Members อย่าง Finished Members มีจำนวนโดยรวมมากกว่า Publishing 
 
 
 ```
