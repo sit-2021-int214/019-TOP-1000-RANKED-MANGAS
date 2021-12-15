@@ -1,7 +1,7 @@
 # 019-TOP-1000-RANKED-MANGAS 📚
 
 Data Visualization
-[BI GROUP019]https://app.powerbi.com/view?r=eyJrIjoiYTcxYjY2MTQtZjkzOC00MDQ2LThjNzUtYzMzMzMyNWViOGY5IiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSection
+[BI GROUP019](https://app.powerbi.com/view?r=eyJrIjoiYTcxYjY2MTQtZjkzOC00MDQ2LThjNzUtYzMzMzMyNWViOGY5IiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSection)
 
 
 ## DETAILS 🔍
