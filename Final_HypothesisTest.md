@@ -29,16 +29,16 @@ alpha <- 0.05
 
 ### STEP 3: Test statistic
 ``` ruby
-z <- (meanFavorites - mue0)/(sdFavorites/sqrt(n)) #1.364063
+t <- (meanFavorites - mue0)/(sdFavorites/sqrt(n)) #1.364063
 ```
 
 ### STEP 4: Finding P-value approach or Critical Value approach
 ``` ruby
 # P-value approach
-pvalue <- pnorm(z); #0.9137262
+pvalue <- pnorm(t); #0.9137262
 
 # Critical Value approach
-zalpha <- qnorm(alpha); #-1.644854
+talpha <- qnorm(alpha); #-1.644854
 ```
 
 ### STEP 5: Compare
@@ -51,7 +51,7 @@ if(pvalue<=alpha){
 }
 
 # Using critical value = "Accept H0"
-if(z<=zalpha){
+if(t<=talpha){
   print("Reject H0")
 }else{
   print("Accept H0")
