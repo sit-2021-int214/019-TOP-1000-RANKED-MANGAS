@@ -1,5 +1,11 @@
 # 019-TOP-1000-RANKED-MANGAS 📚
 
+Data Visualization
+[BI GROUP019]https://app.powerbi.com/view?r=eyJrIjoiYTcxYjY2MTQtZjkzOC00MDQ2LThjNzUtYzMzMzMyNWViOGY5IiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSection
+
+
+## DETAILS 🔍
+
 Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/astronautelvis/top-1000-ranked-mangas-by-myanimelist)
 
 ### About's Datasets 📜
@@ -14,7 +20,6 @@ Datasets from: [TOP 1000 RANKED MANGAS by MyAnimeList](https://www.kaggle.com/as
 - Power BI
 
 
-## STEP 0
 ### Download dataset and library ⏳
 ``` ruby
 # library
@@ -56,7 +61,6 @@ Mangas$Year <- substr(Mangas$Publish_period, str_length(Mangas$Publish_period)-3
 Mangas <- rename(Mangas, Members = Memebers)
 ```
 
-## DETAILS 🔍
 ### ❓ Question: ความหลากหลายของประเภทมังงะ มีผลต่อความสนใจของผู้อ่านมากขึ้นหรือไม่
 ``` ruby
 # หามังงะที่มีจำนวนความสนใจของผู้ใช้งานสูงสุดในแต่ละจำนวนประเภท
@@ -120,7 +124,6 @@ percent = 47.44%
 
 เปอร์เซ็นต์ความต่างของมังงะที่มี 1-6 ประเภท และมังงะที่มี 7-12 ประเภท = 5.11%
 ```
-
 
 ### ❓ Question: มังงะในยุคเก่า(ช่วงปี 1980 - 2000)มีความนิยมมากกว่ามังงะในยุคใหม่หรือไม่
 ``` ruby
