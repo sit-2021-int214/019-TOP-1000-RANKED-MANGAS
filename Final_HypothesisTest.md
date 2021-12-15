@@ -3,7 +3,7 @@
 มังงะที่มีจำนวนตอนมากที่สุดใน 100 อันดับแรก มีค่าเฉลี่ยความชื่นชอบ(Favorite)มากกว่า 5000 โดยใน 100 อันดับแรกจะมีค่าเฉลี่ยอยู่ที่ 5544.4 และส่วนเบี่ยงเบนมาตรฐานมีค่าเท่ากับ 12391.45 (กำหนดค่า alpha = 0.05)
 
 
-STEP 0: Assign variables
+### STEP 0: Assign variables
 ``` ruby
 # กำหนดค่าตัวแปร n, mean, sd, mue0
 n <- 964
@@ -11,30 +11,28 @@ ListChapterManga <- Mangas %>%
   select(Title, Favorites, Chapters) %>% 
   arrange(desc(Chapters)) %>% 
   head(n = 100L)
-ListChapterManga
 meanFavorites <- mean(ListChapterManga$Favorites) #5544.4
 sdFavorites <- sd(ListChapterManga$Favorites) #12391.45
 mue0 <- 5000
 ```
 
-STEP 1: State the hypothesis
+### STEP 1: State the hypothesis
 ``` ruby
 H0 >= 5000
 Ha < 5000
 ```
 
-STEP 2: Level of significance
+### STEP 2: Level of significance
 ``` ruby
 alpha <- 0.05
 ```
 
-Step 3: Test statistic
+### STEP 3: Test statistic
 ``` ruby
 z <- (meanFavorites - mue0)/(sdFavorites/sqrt(n)) #1.364063
 ```
 
-Step 4: Finding P-value approach or Critical Value approach
-
+### STEP 4: Finding P-value approach or Critical Value approach
 ``` ruby
 # P-value approach
 pvalue <- pnorm(z); #0.9137262
@@ -43,7 +41,7 @@ pvalue <- pnorm(z); #0.9137262
 zalpha <- qnorm(alpha); #-1.644854
 ```
 
-Step 5: Compare
+### STEP 5: Compare
 ``` ruby
 # Using p-value approach = "Accept H0"
 if(pvalue<=alpha){
@@ -60,7 +58,7 @@ if(z<=zalpha){
 }
 ```
 
-Step 6: Conclusion
+### STEP 6: Conclusion
 ```
 ค่าเฉลี่ยผู้ที่ชื่นชอบมังงะที่มีอันดับจำนวนตอนที่มากเป็น 100อันดับแรกมีค่าเฉลี่ยมากกว่า 5000
 ```
