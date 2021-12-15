@@ -351,9 +351,6 @@ Result:  จากจำนวนเฉลี่ยผู้ใช้งาน�
 > mean(Mangas$Favorites)
 [1] 2079.291
 ```
-## STEP 3 Data Visualization 🧐
-
-
 
 ## About Us 📝
 
